@@ -1,3 +1,4 @@
+#!/bin/bash
 links="http://geni.us/IsFhdV
 http://geni.us/7oXUgrf
 http://geni.us/1nwUD
@@ -90,8 +91,9 @@ http://geni.us/vJ2Dd06
 http://geni.us/0URf
 http://geni.us/6uosO6
 http://geni.us/VYH30
-http://geni.us/YIKM4B5
-http://geni.us/jGLE
+http://geni.us/YIKM4B5"
+
+links2="http://geni.us/jGLE
 http://geni.us/EBdpKy
 http://geni.us/GL8Z3iS
 http://geni.us/wHn15HS
@@ -109,7 +111,7 @@ http://geni.us/mqlF"
 
 declare -i i=0
 
-for link in $links
+for link in $links2
 do 
 echo $link
 wget -r $link -O book_$i.html
